@@ -91,8 +91,8 @@ const   Facilities = () => {
             <div className="text-center lg:text-right">
               <button 
                 onClick={openEnquiryModal}
-                
-                className="bg-[#0A294D] text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition duration-200 text-sm"
+                className="text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition duration-200 text-sm"
+                style={{ backgroundColor: '#009933' }}
               >
                 Schedule Campus Tour
               </button>

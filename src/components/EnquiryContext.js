@@ -12,23 +12,24 @@ export const useEnquiry = () => {
 };
 
 export const EnquiryProvider = ({ children }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
 
   const openEnquiryModal = () => {
-    setIsModalOpen(true);
+    setIsEnquiryModalOpen(true);
   };
 
   const closeEnquiryModal = () => {
-    setIsModalOpen(false);
+    setIsEnquiryModalOpen(false);
   };
 
   return (
-    <EnquiryContext.Provider value={{ openEnquiryModal, closeEnquiryModal }}>
+    <EnquiryContext.Provider value={{ 
+      isEnquiryModalOpen, 
+      openEnquiryModal, 
+      closeEnquiryModal 
+    }}>
       {children}
-      <EnquiryModal 
-        isOpen={isModalOpen} 
-        onClose={closeEnquiryModal} 
-      />
+      <EnquiryModal />
     </EnquiryContext.Provider>
   );
 };

@@ -11,15 +11,15 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-8" style={{ backgroundColor: '#FFF3EE' }}>
+    <section id="about" className="py-8" bg-white>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#333333' }}>
-            About Oriental University
+            About Coer University
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Established with a vision to bridge Eastern wisdom and modern education, Oriental University 
+            Established with a vision to bridge Eastern wisdom and modern education, Coer University 
             stands as a beacon of academic excellence, cultural heritage, and innovative learning.
           </p>
         </div>
@@ -30,7 +30,7 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4" style={{ color: '#333333' }}>Our Legacy</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                For over two decades, Oriental University has been at the forefront of educational innovation, 
+                For over two decades, Coer University has been at the forefront of educational innovation, 
                 combining time-honored Eastern philosophical traditions with cutting-edge Western methodologies 
                 to create a unique learning environment.
               </p>
@@ -53,7 +53,7 @@ const About = () => {
 
           <div className="animate-on-scroll">
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold mb-6" style={{ color: '#333333' }}>Why Choose Oriental University?</h3>
+              <h3 className="text-2xl font-bold mb-6" style={{ color: '#333333' }}>Why Choose Coer University?</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 rounded-full flex items-center justify-center mt-1" style={{ backgroundColor: '#333333' }}>

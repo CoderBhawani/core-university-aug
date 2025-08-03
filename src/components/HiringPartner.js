@@ -48,17 +48,17 @@ const HiringPartner = () => {
         <div className="bg-white rounded-xl shadow-lg p-8 card-modern">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary-600"style={{ color: '#0A294D' }}>95%</div>
+              <div className="text-4xl font-bold text-primary-600"style={{ color: '#009933' }}>95%</div>
               <div className="text-lg font-semibold text-gray-800">Placement Rate</div>
               <div className="text-gray-600">Students placed within 6 months</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary-600"style={{ color: '#0A294D' }}>₹8.5L</div>
+              <div className="text-4xl font-bold text-primary-600"style={{ color: '#009933' }}>₹8.5L</div>
               <div className="text-lg font-semibold text-gray-800">Average Package</div>
               <div className="text-gray-600">Starting salary for our graduates</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary-600"style={{ color: '#0A294D' }}>500+</div>
+              <div className="text-4xl font-bold text-primary-600"style={{ color: '#009933' }}>500+</div>
               <div className="text-lg font-semibold text-gray-800">Partner Companies</div>
               <div className="text-gray-600">Actively hiring our students</div>
             </div>
@@ -76,16 +76,17 @@ const HiringPartner = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={openEnquiryModal}
-              style={{ background: '#0A294D' }}
-              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition duration-300 btn-modern"
+              className="px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition duration-300"
+              style={{ backgroundColor: '#ECC820', color: '#212121' }}
             >
               View Placement Records
             </button>
             <button 
               onClick={openEnquiryModal}
-              className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition duration-300"
+              className="text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition duration-300"
+              style={{ backgroundColor: '#009933' }}
             >
-              Talk to Career Counselor
+              Talk to Counsellor
             </button>
           </div>
         </div>

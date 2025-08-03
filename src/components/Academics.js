@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
+import { useEnquiry } from './EnquiryContext';
 
 const Academics = () => {
+  const { openEnquiryModal } = useEnquiry();
+
   const departments = [
     {
       name: "School of Engineering",
@@ -164,7 +167,11 @@ const Academics = () => {
                     ))}
                   </div>
                   
-                  <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200 font-medium"style={{ background: '#0A294D' }}>
+                  <button 
+                    onClick={openEnquiryModal}
+                    className="mt-6 w-full text-white py-2 rounded-lg hover:opacity-90 transition duration-200 font-medium"
+                    style={{ backgroundColor: '#009933' }}
+                  >
                     Learn More
                   </button>
                 </div>
@@ -175,17 +182,25 @@ const Academics = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16 animate-on-scroll">
-          <div className="rounded-2xl p-8 text-black"style={{ backgroundColor: '#FFF3EE' }}>
+          <div className="rounded-2xl p-8 text-white" style={{ backgroundColor: '#212121' }}>
             <h3 className="text-2xl font-bold mb-4">Ready to Start Your Academic Journey?</h3>
-            <p className="text-black mb-6 max-w-2xl mx-auto">
-              Join thousands of students who have chosen Karanvati University for their higher education. 
-              Explore our programs and find the perfect fit for your career goals.
+            <p className="opacity-80 mb-6 max-w-2xl mx-auto">
+              Join thousands of students who have chosen COER University for their higher education. 
+              Discover programs that align with your career goals and aspirations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-200">
+              <button 
+                onClick={openEnquiryModal}
+                className="text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition duration-200"
+                style={{ backgroundColor: '#009933' }}
+              >
                 Apply Now
               </button>
-              <button className="border-2 border-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-200">
+              <button 
+                onClick={openEnquiryModal}
+                className="px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition duration-200"
+                style={{ backgroundColor: '#ECC820', color: '#212121' }}
+              >
                 Download Brochure
               </button>
             </div>
